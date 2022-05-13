@@ -9,23 +9,27 @@
 
     <meta name="description" content="">
     <meta name="keywords" content="">
-    
+
     <!-- facebook -->
     <meta property="og:locale" content="et_EE">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Korteri remont Ida-Virumaal">
     <meta property="og:url" content="/"">
-    <meta property="og:image" content="https://i.imgur.com/94dYJRJ.jpg">
-    <meta property="og:description" content="Hinna kuldne kesktee remondiks ja me ei hinda seda kunagi üle! Kehtivad allahindlused!">
+    <meta property=" og:image" content="https://i.imgur.com/94dYJRJ.jpg">
+    <meta property="og:description"
+        content="Hinna kuldne kesktee remondiks ja me ei hinda seda kunagi üle! Kehtivad allahindlused!">
 
     <!-- twitter -->
     <meta name="twitter:title" content="Korteri remont Ida-Virumaal">
     <meta name="twitter:image" content="https://i.imgur.com/94dYJRJ.jpg">
-    <meta name="twitter:description" content="Hinna kuldne kesktee remondiks ja me ei hinda seda kunagi üle! Kehtivad allahindlused!">
+    <meta name="twitter:description"
+        content="Hinna kuldne kesktee remondiks ja me ei hinda seda kunagi üle! Kehtivad allahindlused!">
 
     <title>Korteri remont on Narvas ja Ida-Virumaal</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600;700&family=Ubuntu:wght@400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/normalize.css">
@@ -63,41 +67,41 @@
                     </h2>
                     <nav class="header-menu">
                         <div class="mob-wrapper">
-                <div class="header__burger">
-                    <span></span>
-                </div>
-                        <span class="language__selector-media">
-                            <ul>
-                            <li class="menu__hover language">
-                                <a class="page-active" href="index.html">RU</a> |
-                                <a href="index-ee.html">EE</a>
-                            </li>
-                        </ul>
-                        </span>
-                    </div>
+                            <div class="header__burger">
+                                <span></span>
+                            </div>
+                            <span class="language__selector-media">
+                                <ul>
+                                    <li class="menu__hover language">
+                                        <a class="page-active" href="index.html">RU</a> |
+                                        <a href="index-ee.html">EE</a>
+                                    </li>
+                                </ul>
+                            </span>
+                        </div>
                         <ul class="menu__list">
                             <li class="page-active">
-                                <a href="index.html">
+                                <a href="index-ee.html">
                                     Avaleht
                                 </a>
                             </li>
                             <li class="menu__hover">
-                                <a href="service.html">
+                                <a href="service-ee.html">
                                     Teenused
                                 </a>
                             </li>
                             <li class="menu__hover">
-                                <a href="#about">
+                                <a href="company-ee.html">
                                     Meist
                                 </a>
                             </li>
                             <li class="menu__hover">
-                                <a href="portfolio">
-                                    Pakume tööd
+                                <a href="portfolio-ee.html">
+                                    Portfell
                                 </a>
                             </li>
                             <li class="menu__hover mob-li">
-                                <a href="contacts.html">
+                                <a href="contacts-ee.html">
                                     Kontakt
                                 </a>
                             </li>
@@ -113,7 +117,6 @@
     </header>
 
     <section class="form-call">
-
         <div onclick="show('none')" id="window-background"></div>
 
         <div id="form-window">
@@ -122,17 +125,14 @@
                 <div id="form-title">
                     Taotle kõnet
                 </div>
-                <form action="sendmail.php" name="call-form" class="call__order">
-                    <div class="form-name">
-                        Nimi
-                    </div>
-                    <input class="form1-input" type="text" name="name1" required>
-                    <div class="form-name">
-                        Telefon
-                    </div>
-                    <input class="form1-input" type="tel" pattern="+372" class="form-tel" pattern="+372" name="tel1"
-                        required>
-                    <input class="form-submit" type="submit" value="Saada">
+                <form action="sendmail.php" id="form" name="call-form" class="call__order">
+                    <label for="contacs-name" class="form-name" title="Имя">Nimi*</label>
+                    <input class="form1-input _req" id="contacs-name" type="text" name="name1" placeholder="Sinu nimi">
+
+                    <label for="contacs-tel" class="form-name" title="Телефон">Telefon*</label>
+                    <input id="contacs-tel" class="form1-input _req" type="text" name="tel1" placeholder="Sinu telefon">
+
+                    <button class="form-submit" type="submit" title="Saada">Saada</button>
                 </form>
             </div>
         </div>
@@ -151,8 +151,8 @@
                             Teostame keerukat võtmed kätte korteri renoveerimist.
                         </p>
                         <div class="slider-btns">
-                        <a onclick="show('block')" class="call-btn call-form slider-btn">Taotle kõnet</a>
-                        <a href="service.html" class="services slider-btn">Teenused</a>
+                            <a onclick="show('block')" class="call-btn call-form slider-btn">Taotle kõnet</a>
+                            <a href="service-ee.html" class="services slider-btn">Teenused</a>
                         </div>
                     </div>
                 </div>
@@ -163,10 +163,15 @@
 
             <div class="slider__item">
                 <div class="container">
-                    <div class="slider1-title">
-                        fhfgjgh
-                    </div>
-                    <div class="slider-text"></div>
+                    <h2 class="slider1-title" style="margin-top: 0;">
+                        Kompleksse remondiga <br> kingituseks:
+                    </h2>
+
+                    <ul class="slider-list">
+                        <li><span>Ehitusmaterjalide&nbsp;ost</span></li>
+                        <li><span>Kohaletoimetamine&nbsp;ja&nbsp;järeletulemine</span></li>
+                        <li><span>Prügi&nbsp;välja&nbsp;viima</span></li>
+                    </ul>
                 </div>
                 <div class="gallery">
                     <img src="images/galery2.jpg" alt="slider-photo2">
@@ -175,10 +180,19 @@
 
             <div class="slider__item">
                 <div class="container">
-                    <div class="slider1-title">
-                        fhfgjgh
+                    <div class="col-center">
+                        <h2 class="slider1-title">
+                            Äripindade renoveerimine
+                        </h2>
+                        <p class="slider-text">
+                            Loome kohti toitlustamiseks ja vaba aja veetmiseks <br> kuhu tahad tagasi pöörduda
+                        </p>
+                        <div class="slider-btns">
+                            <a onclick="show('block')" class="call-btn call-form slider-btn">Taotle kõnet</a>
+                            <a href="service.html" class="services slider-btn">Teenused</a>
+                        </div>
+                        <div class="slider-text"></div>
                     </div>
-                    <div class="slider-text"></div>
                 </div>
                 <div class="gallery">
                     <img src="images/galery3.jpg" alt="slider-photo3">
@@ -199,7 +213,7 @@
                         <h3 class="garant__title garant title-img1">
                             Garantii
                         </h3>
-                        <p class="garant-text">                           
+                        <p class="garant-text">
                             Korteri remonti garantii<br> 2 aastat.
                         </p>
                     </div>
@@ -229,84 +243,89 @@
                             Kvaliteet
                         </h3>
                         <p class="garant-text">
-                            Sõltumata renoveerimise või <br> kaunistamise valikust, alates säästlikust kuni luksuseni,<br> on meie teenuste kvaliteet alati hea!
+                            Sõltumata renoveerimise või <br> kaunistamise valikust, alates säästlikust kuni
+                            luksuseni,<br> on meie teenuste kvaliteet alati hea!
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-    
 
-    <div class="quality-page">
-        <div class="container">
-            <h3 class="quality-title">
-                <a class="quality-title" href="service.html">MEIE TEENUSED</a>
-            </h3>
-            <div class="quality__inner">
-                <div class="quality__item">
-                    <div class="quality-background">
-                        <div class="quality-img__inner">
-                            <a class="call-btn more-btn" href="service.html">Lisainfo</a>
-                            <div class="quality-img">
-                                <h3 class="quality-title__img">
-                                    Korterite remonti
-                                </h3>
-                                <img class="quality__images" src="images/remont.jpg" alt="Remont-img">
+
+        <div class="quality-page">
+            <div class="container">
+                <h3 class="quality-title">
+                    <a class="quality-title" href="service-ee.html">MEIE TEENUSED</a>
+                </h3>
+                <div class="quality__inner">
+                    <div class="quality__item">
+                        <div class="quality-background">
+                            <div class="quality-img__inner">
+                                <a class="call-btn more-btn" href="service-ee.html">Lisainfo</a>
+                                <div class="quality-img">
+                                    <h3 class="quality-title__img">
+                                        Korterite remonti
+                                    </h3>
+                                    <img class="quality__images" src="images/remont.jpg" alt="Remont-img">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="quality__item">
-                    <div class="quality-background">
-                        <div class="quality-img__inner">
-                            <div class="quality-img">
+                    <div class="quality__item">
+                        <div class="quality-background">
+                            <div class="quality-img__inner">
+                                <div class="quality-img">
                                     <h3 class="quality-title__img">
                                         VANNITOA REMONT
                                     </h3>
-                                    <a class="call-btn more-btn right-btn right-btn-ee" href="service.html">Lisainfo</a>
-                                <img class="quality__images" src="images/bathroom.jpg" alt="Remont-img">
+                                    <a class="call-btn more-btn right-btn right-btn-ee"
+                                        href="service-ee.html">Lisainfo</a>
+                                    <img class="quality__images" src="images/bathroom.jpg" alt="Remont-img">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <div id="about" class="about-company">
-        <div class="container">
-            <h3 class="company-title">
-                Meist
-            </h3>
-            <h4 class="logo-about">
-                Ehitusettevõte &#171Sivir<span>Ehitus</span>&#187 <br>
-            </h4>
-            <p class="about-descr">«SivirEhitus» - мы выполняем качественные строительные работы а так же другие виды ремонтных <a class="strong" href="service.html">услуг</a>. Ремонтируем квартиры, ванные комнаты,  в Нарве, и по всему Ида-Вирумаа.</p>
-            <div class="advantages">Põhjused meie valimiseks:</div>
-            <ul class="about-company__info">
-                <li>Samm-sammult makse.</li>
-                <li>Lepingus täpsustatud remondi tingimuste järgimine.</li>
-                <li>Mahtuge oma eelarvesse.</li>
-                <li>Remonditöid teostavate spetsialistide professionaalsus.</li>
-            </ul>
-            <a class="company-btn" href="company.html">Lisainfo</a>
+
+        <div id="about" class="about-company">
+            <div class="container">
+                <h3 class="company-title">
+                    Meist
+                </h3>
+                <h4 class="logo-about">
+                    Ehitusettevõte &#171Sivir<span>Ehitus</span>&#187 <br>
+                </h4>
+                <p class="about-descr">«SivirEhitus» - teostame kvaliteetseid ehitustöid, aga ka muid <a class="strong"
+                        href="service-ee.html">remonditeenuseid</a>. Remondime kortereid, vannitubasid, Narvas ja seega
+                    ka
+                    Ida-Virumaal.
+                <div class="advantages">Põhjused meie valimiseks:</div>
+                <ul class="about-company__info">
+                    <li>Samm-sammult makse.</li>
+                    <li>Lepingus täpsustatud remondi tingimuste järgimine.</li>
+                    <li>Mahtuge oma eelarvesse.</li>
+                    <li>Remonditöid teostavate spetsialistide professionaalsus.</li>
+                </ul>
+                <a class="company-btn" href="company-ee.html">Lisainfo</a>
+            </div>
         </div>
-    </div>
     </main>
-    
+
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
                 <div class="footer-col__logo">
-                <h3 class="footer-logo">
-                   <a href="#header-top">Sivir<span>Ehitus</span></a> 
-                </h3>
-                <div class="footer-copyright">
-                    © 2019 - 2021
-                </div>
-                     <p class="footer-descr">«SivirEhitus OÜ: Korterite renoveerimine Narvas ja kõigile Ida-Virumaal»
-                </p>
+                    <h3 class="footer-logo">
+                        <a href="#header-top">Sivir<span>Ehitus</span></a>
+                    </h3>
+                    <div class="footer-copyright">
+                        © 2019 - 2021
+                    </div>
+                    <p class="footer-descr">«SivirEhitus OÜ: Korterite renoveerimine Narvas ja kõigile Ida-Virumaal»
+                    </p>
                 </div>
 
                 <div class="footer-info">
@@ -314,7 +333,8 @@
                         <li><a class="tel-footer" href="tel:+37256858732">+372 5685 8732</a></li>
                         <li><a class="email" href="mailto:#">info@sivirehitus.ee</a></li>
                         <li>E-P 09:00 kuni 21:00 </li>
-                        <a class="footer-social" href="https://www.facebook.com/" target="_blank"><img class="facebook-footer" src="images/icons-facebook.png" alt="facebook">Sotsiaal:</a>
+                        <a class="footer-social" href="https://www.facebook.com/" target="_blank"><img
+                                class="facebook-footer" src="images/icons-facebook.png" alt="facebook">Sotsiaal:</a>
                     </ul>
                 </div>
             </div>
@@ -324,6 +344,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/contact-form.js"></script>
 </body>
 
 </html>
